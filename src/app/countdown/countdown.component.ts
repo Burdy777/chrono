@@ -6,7 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./countdown.component.scss']
 })
 export class CountdownComponent{
-
   constructor() { }
 
 }
