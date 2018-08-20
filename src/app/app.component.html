@@ -1,3 +1,8 @@
 <app-progress-bar [progress]="progress"></app-progress-bar> 
-<app-count [init]='init' (countDown)="decrementBar($event)"></app-count>
+<app-count #count [init]='init' (countDown)="decrementBar($event)"></app-count>
+<div class="input">
+  En seconde, Saisie le temps qui doit écouler
+<input type="text" [(ngModel)]="init"/>
+</div>
+<button (click)="count.start(); progress=100;">Restart</button>
 
